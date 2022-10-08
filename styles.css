@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+/*============================*/
+/*    start reusable class    */
+/*============================*/
+
+.border-radius-20px {
+    border-radius: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.desaturated-blue-color {
+    color: hsl(224, 23%, 55%);
+}
+
+/*============================*/
+/*    end reusable class        */
+/*============================*/
+
+.order-summary-background {
+    height: 100vh;
+    background-image: url("./images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-summery-card {
+    background-color: white;
+    width: 90%;
+    max-width: 390px;
+    box-shadow: 0 10px 10px 0px hsla(245, 75%, 52%, 0.1);
+}
+
+.order-summary-illustration {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order-summary-details {
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.order-summary-title {
+    font-size: 24px;
+}
+
+.order-summary-paragraph {
+    line-height: 1.6;
+    margin-top: 24px;
+}
+
+.order-summary-background-plan {
+    background-color:  hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+.order-summary-music-icon {
+    margin-right: 20px;
+}
+
+.order-summary-description {
+    margin-right: 28px;
+}
+
+.order-summary-h2-plan {
+    font-size: 16px;
+}
+
+.order-summary-change-link {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+.order-summary-payment-button {
+    width: 100%;
+    margin-top: 24px;
+    box-shadow: 0 10px 10px 0px hsla(245, 75%, 52%, 0.1);
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 16px 0;
+    border-radius: 12px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.order-summary-cancel-order-button {
+    margin-top: 24px;
+    background: none;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+/*============================*/
+/*    Desktop version    */
+/*============================*/
+
+@media screen and (min-width: 376px) {
+    .order-summary-background {
+        background-image: url("./images/pattern-background-desktop.svg");
+    }
+}
